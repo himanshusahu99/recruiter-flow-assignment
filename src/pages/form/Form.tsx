@@ -1,7 +1,7 @@
 import useBoxForm from './useForm'
 
 const Form = () => {
-  const { form, setField, error, status, handleSubmit, hexToRgb } = useBoxForm()
+  const { form, setField, error, status, handleSubmit, } = useBoxForm()
 
   return (
     <div>
