@@ -36,7 +36,7 @@ const TableView = () => {
       {loading && <div>Loading...</div>}
       {error && <div className="form-error">{error}</div>}
 
-      <Table columns={columns} data={items} />
+      {items.length ?   <Table columns={columns} data={items} /> : 'NO Records Found'}
     </div>
   )
 }
