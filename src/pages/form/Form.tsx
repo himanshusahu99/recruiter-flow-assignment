@@ -6,7 +6,7 @@ const Form = () => {
   return (
     <div>
       <h2>Shipping Box - Add</h2>
-      <form onSubmit={handleSubmit} className="form-root">
+      <div className="form-root">
         <div>
           <label>Receiver name</label>
           <div>
@@ -59,9 +59,9 @@ const Form = () => {
         </div>
 
         <div >
-          <button type="submit">Save</button>
+          <button  onClick={handleSubmit}  type="submit">Save</button>
         </div>
-      </form>
+      </div>
 
       {error && <div className="form-error">{error}</div>}
       {status && <div className="form-status">{status}</div>}
