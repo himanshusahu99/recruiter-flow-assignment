@@ -9,7 +9,7 @@ export type Column<T> = {
 
 function Table<T>({ columns, data }: { columns: Column<T>[]; data: T[] }) {
   return (
-    <table>
+    <table border={1}>
       <thead>
         <tr>
           {columns.map((col) => (
