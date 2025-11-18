@@ -7,7 +7,7 @@ const Layout = () => {
   return (
   <div>
       <Navigation />
-      <main style={{ padding: 12 }}>
+      <main>
         <Routes>
           <Route path="/" element={<Navigate to="/form" replace />} />
           <Route path="/form" element={<Form />} />
