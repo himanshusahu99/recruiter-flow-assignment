@@ -35,15 +35,15 @@ export default function useBoxForm() {
 
   const handleSubmit = async () => {
 
-  
+    setStatus(null)
+    setError(null)
     const validationError = validate()
     if (validationError) { 
       setError(validationError)
       return false
     }
 
-    setStatus(null)
-    setError(null)
+  
    
     try {
       const rgb = hexToRgb(form.colour)
